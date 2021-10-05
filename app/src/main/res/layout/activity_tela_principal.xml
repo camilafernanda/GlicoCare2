@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".TelaPrincipal">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_inserir_dados"
+        android:textSize="25sp"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageButton
+        android:id="@+id/bt_glicose"
+        style="@style/ContainerComponents"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="25dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:padding="15dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_blood"
+        app:layout_constraintEnd_toStartOf="@+id/bt_food"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"/>
+
+    <TextView
+        android:id="@+id/text_glicose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Glicose"
+        android:textSize="15sp"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintTop_toBottomOf="@id/bt_glicose"
+        app:layout_constraintEnd_toEndOf="@id/bt_glicose"
+        app:layout_constraintStart_toStartOf="@id/bt_glicose"/>
+
+
+    <ImageButton
+        android:id="@+id/bt_food"
+        style="@style/ContainerComponents"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="25dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:padding="15dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_food"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bt_med"
+        app:layout_constraintStart_toEndOf="@+id/bt_glicose"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+        android:id="@+id/text_alimentacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alimentação"
+        android:textSize="15sp"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintTop_toBottomOf="@id/bt_food"
+        app:layout_constraintEnd_toEndOf="@id/bt_food"
+        app:layout_constraintStart_toStartOf="@id/bt_food"/>
+
+    <ImageButton
+        android:id="@+id/bt_med"
+        style="@style/ContainerComponents"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="25dp"
+        android:layout_marginStart="44dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:padding="15dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_medication"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_food"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+        android:id="@+id/text_medicamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medicamentos"
+        android:textSize="15sp"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintTop_toBottomOf="@id/bt_med"
+        app:layout_constraintEnd_toEndOf="@id/bt_med"
+        app:layout_constraintStart_toStartOf="@id/bt_med"/>
+
+    <ImageButton
+        android:id="@+id/bt_peso"
+        style="@style/ContainerComponents"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="25dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:padding="15dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_peso"
+        app:layout_constraintTop_toBottomOf="@id/text_glicose"
+        app:layout_constraintEnd_toEndOf="@id/text_glicose"
+        app:layout_constraintStart_toStartOf="@id/text_glicose" />
+
+    <TextView
+        android:id="@+id/text_peso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peso"
+        android:textSize="15sp"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintTop_toBottomOf="@id/bt_peso"
+        app:layout_constraintEnd_toEndOf="@id/bt_peso"
+        app:layout_constraintStart_toStartOf="@id/bt_peso"/>
+
+    <ImageButton
+        android:id="@+id/bt_sports"
+        style="@style/ContainerComponents"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="25dp"
+        android:layout_marginTop="92dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:padding="15dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_sports"
+        app:layout_constraintEnd_toEndOf="@id/text_alimentacao"
+        app:layout_constraintStart_toStartOf="@id/text_alimentacao"
+        app:layout_constraintTop_toBottomOf="@id/text_alimentacao"
+         />
+
+    <TextView
+        android:id="@+id/text_atividade_fisica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atividade Física"
+        android:textSize="15sp"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintTop_toBottomOf="@id/bt_sports"
+        app:layout_constraintEnd_toEndOf="@id/bt_sports"
+        app:layout_constraintStart_toStartOf="@id/bt_sports"/>
+
+    <ImageButton
+        android:id="@+id/bt_insulina"
+        style="@style/ContainerComponents"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="25dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_vacina"
+        app:layout_constraintEnd_toEndOf="@id/text_medicamento"
+        app:layout_constraintStart_toStartOf="@id/text_medicamento"
+        app:layout_constraintTop_toBottomOf="@id/text_medicamento" />
+
+    <TextView
+        android:id="@+id/text_insulina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insulina"
+        android:textSize="15sp"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintTop_toBottomOf="@id/bt_insulina"
+        app:layout_constraintEnd_toEndOf="@id/bt_insulina"
+        app:layout_constraintStart_toStartOf="@id/bt_insulina"/>
+
+    <View
+        android:id="@+id/containerComponents"
+        style="@style/ContainerComponents"
+        android:layout_width="360dp"
+        android:layout_height="160dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_peso" />
+
+    <TextView
+        android:id="@+id/title_afericoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Últimas aferições:"
+        android:textSize="25sp"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintTop_toTopOf="@id/containerComponents"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
