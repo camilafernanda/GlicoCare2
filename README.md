@@ -1,1 +1,1 @@
-# GlicoCare2
+# GlicoCare
